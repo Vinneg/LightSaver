@@ -59,7 +59,7 @@ local function FindUnitByGUID()
         for i = 1, GetNumGroupMembers() do
             local u = "raid" .. i
 
-            print(u, " ", UnitName(u), " ", patient.name)
+            --print(u, " ", UnitName(u), " ", patient.name)
 
             if UnitExists(u) then
                 if UnitName(u) == patient.name then
@@ -73,7 +73,7 @@ local function FindUnitByGUID()
         for i = 1, GetNumGroupMembers() - 1 do
             local u = "party" .. i
 
-            print(u, " ", UnitName(u), " ", patient.name)
+            --print(u, " ", UnitName(u), " ", patient.name)
 
             if UnitExists(u) then
                 if UnitName(u) == patient.name then
