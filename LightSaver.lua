@@ -99,6 +99,8 @@ local function OnSpellCast(unit)
         patient.name = UnitName("player")
         patient.uid = "player"
     end
+
+    print("Каст в цель: ", patient.name, " | UID: ", patient.uid)
 end
 
 local function UpdateTopBoxColor()
@@ -149,7 +151,7 @@ local function updateColor()
     end
 
     if (endTime - GetTime() * 1000) < 100 then
-        print(endTime, " ", GetTime(), " ", endTime - GetTime() * 1000)
+        --print(endTime, " ", GetTime(), " ", endTime - GetTime() * 1000)
         bottomTexture:SetColorTexture(1, 0, 0)
     else
         bottomTexture:SetColorTexture(0, 1, 0)
