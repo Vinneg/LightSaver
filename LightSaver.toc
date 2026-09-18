@@ -1,0 +1,6 @@
+## Interface: 114000
+## Title: Light Saver
+## Author: Vinneg
+## Version: 1.0.0
+## SavedVariables: LightSaverDB
+LightSaver.lua
